@@ -3,7 +3,16 @@
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<content>
+					<Button text="Press Me" press="onPressButton"/>
+					<List>
+						<items>
+							<StandardListItem title="Buy Milk"/>
+							<StandardListItem title="Pay Bills"/>
+							<StandardListItem title="Exercise"/>
+						</items>
+					</List>
+				</content>
 			</Page>
 		</pages>
 	</App>
