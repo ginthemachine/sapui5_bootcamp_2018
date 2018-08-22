@@ -19,8 +19,19 @@ sap.ui.define([
 				"task": "Pay Bills"
 			}, {
 				"task": "Exercise"
+			}, {
+				"task": "Watch a Movie"
 			}];
 			var oModel = new JSONModel(oData);
+			return oModel;
+		},
+
+		createSampleModel: function(sBindingMode) {
+			var oData = {
+				"description": "lorem ipsum"
+			};
+			var oModel = new JSONModel(oData);
+			oModel.setDefaultBindingMode(sBindingMode);
 			return oModel;
 		}
 

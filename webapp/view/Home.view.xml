@@ -4,12 +4,14 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
+					<!-- Used to test events -->
 					<Button text="Press Me" press="onPressButton"/>
-					<List>
+					<!-- Used to test binding modes -->
+					<Input type="Text" value="{sampleModel>/description}"/>
+					<Text text="{sampleModel>/description}"/>
+					<List items="{todo>/}" >
 						<items>
-							<StandardListItem title="Buy Milk"/>
-							<StandardListItem title="Pay Bills"/>
-							<StandardListItem title="Exercise"/>
+							<StandardListItem title="{todo>task}"/>
 						</items>
 					</List>
 				</content>

@@ -23,6 +23,17 @@ sap.ui.define([
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
 
+			// Change parameter to test OneWay, TwoWay, OneTime
+			this.setModel(models.createSampleModel("OneWay"), "sampleModel");
+			// takes effect since we modified the model directly, not from UI
+			// this.getModel("sampleModel").setProperty("/description", "hey hey hey");
+
+			// this.setModel(models.createSampleModel("TwoWay"), "sampleModel");
+
+			// this.setModel(models.createSampleModel("OneTime"), "sampleModel");
+			// This will note take effect due to "OneTime"
+			// this.getModel("sampleModel").setProperty("/description", "hey hey hey");
+
 			// set the to-do model
 			this.setModel(models.createTodoModel(), "todo");
 		}
