@@ -10,6 +10,18 @@ sap.ui.define([
 			var oModel = new JSONModel(Device);
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
+		},
+
+		createTodoModel: function() {
+			var oData = [{
+				"task": "Buy Milk"
+			}, {
+				"task": "Pay Bills"
+			}, {
+				"task": "Exercise"
+			}];
+			var oModel = new JSONModel(oData);
+			return oModel;
 		}
 
 	};
