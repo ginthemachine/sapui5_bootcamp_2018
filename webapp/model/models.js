@@ -14,13 +14,21 @@ sap.ui.define([
 
 		createTodoModel: function() {
 			var oData = [{
-				"task": "Buy Milk"
+				"task": "Buy Milk",
+				"description": "Buy milk at supermarket near you.",
+				"status": 1
 			}, {
-				"task": "Pay Bills"
+				"task": "Pay Bills",
+				"description": "Pay bills online.",
+				"status": 2
 			}, {
-				"task": "Exercise"
+				"task": "Exercise",
+				"description": "Visit the gym near you.",
+				"status": 3
 			}, {
-				"task": "Watch a Movie"
+				"task": "Watch a Movie",
+				"description": "Buy tickets for the movies.",
+				"status": 1
 			}];
 			var oModel = new JSONModel(oData);
 			return oModel;

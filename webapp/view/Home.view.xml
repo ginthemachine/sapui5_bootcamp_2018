@@ -9,9 +9,11 @@
 					<!-- Used to test binding modes -->
 					<Input type="Text" value="{sampleModel>/description}"/>
 					<Text text="{sampleModel>/description}"/>
-					<List items="{todo>/}" >
+					<List items="{todo>/}">
 						<items>
-							<StandardListItem title="{todo>task}"/>
+							<StandardListItem title="{todo>task}"
+								description="{ parts: ['i18n>todoDescription', 'todo>description'], formatter:'jQuery.sap.formatMessage' }"
+								info="{ path:'todo>status', formatter:'.formatter.fnFormatStatus' }"/>
 						</items>
 					</List>
 				</content>
