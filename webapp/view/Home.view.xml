@@ -3,7 +3,10 @@
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<content>
+					<Text text="Hello world!" width="100%"/>
+					<Button text="Sum!" press="showSum"/>
+				</content>
 			</Page>
 		</pages>
 	</App>
