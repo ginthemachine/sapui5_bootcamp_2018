@@ -53,6 +53,14 @@ sap.ui.define([
 			alert("Hello from button");
 			this._myPrivateFunction();
 		},
+		
+		/**
+		 * Event handler for item press
+		 * @memberOf bootcamptodolist.view.Home
+		 */
+		onPressItem: function(oEvent){
+			alert("Hello from item");
+		},
 
 		/**
 		 * Function called from onPressButton
